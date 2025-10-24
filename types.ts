@@ -37,3 +37,30 @@ export interface RoadmapItem {
   status: string;
   description: string;
 }
+
+export interface TeamMember {
+  name: string;
+  title: string;
+  image: string;
+  education: string[];
+  workHistory: string[];
+  skills: string[];
+}
+
+export interface Transaction {
+  id: string;
+  type: 'Buy' | 'Sell' | 'Transfer' | 'Offset';
+  date: string;
+  amountCBC: number;
+  amountUSD: number;
+  status: 'Completed' | 'Pending';
+}
+
+export interface Offset {
+  id: string;
+  date: string;
+  amountCBC: number;
+  amountCO2: number; // in tonnes
+  project: string;
+  certificateId: string;
+}

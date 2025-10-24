@@ -1,5 +1,9 @@
 import React from 'react';
-import type { AllocationItem, FundraisingRound, TechLayer, UtilityItem, ProblemPoint, RoadmapItem } from './types';
+import type { AllocationItem, FundraisingRound, TechLayer, UtilityItem, ProblemPoint, RoadmapItem, TeamMember } from './types';
+
+export const Logo: React.FC = () => (
+  <img src="/logo.png" alt="Carbon Blockchain Certificate Logo" className="h-12" />
+);
 
 export const ALLOCATION_DATA: AllocationItem[] = [
   { name: 'Carbon Credit Backing', value: 50, color: '#10b981' },
@@ -77,4 +81,45 @@ export const ROADMAP_DATA: RoadmapItem[] = [
     status: 'Planned',
     description: 'Integrate into compliance markets, scale to 30M credits.',
   },
+];
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    name: 'Joshua Chang',
+    title: 'Co-Founder and CEO',
+    image: '/placeholder-joshua.png',
+    education: ['University of Pennsylvania, Applied Mathematics and Computational Science, M.A.'],
+    workHistory: [
+      'Morgan Stanley: Software Developers',
+      'IBM Watson Research Center: Research Assistant',
+      'IBM Global Business Services New York: Software Consultant, Strategy Consultant'
+    ],
+    skills: [
+      'Carbon Emission Calculation',
+      'ESG Calculation',
+      'Data Analysis',
+      'AI Model MCP and Agent',
+      'Software develop life cycle planning',
+      'Blockchain DAPP planning and development'
+    ]
+  },
+  {
+    name: 'Rudi Bunawan Sutedja',
+    title: 'Director of Sustainable Business Development',
+    image: '/placeholder-rudi.png',
+    education: ['Art Institute of Fort Lauderdale, Florida, USA. Associate degree in Interior Design.'],
+    workHistory: [
+      'Apple Computer Indonesia (PT. InTouch), multimedia specialist',
+      'PT. Reka Chitra Swhara, Owner, media localization projects.',
+      'Cerita Alam Nusantara, NGO, founder. Storytelling of conservation acts in Indonesia.',
+      'Ofora Trust Foundation, NGO, founder. Conservation of endangered species in Indonesia.',
+      'Aladdin Group Malaysia, IT group, business development.',
+      'Saakuru Labs, IT & blockchain company, marketing consultant.'
+    ],
+    skills: [
+      'Multimedia productions with IT technology.',
+      'Storytelling of complex fundraising projects.',
+      'Passion in nature conservations.'
+    ]
+  }
 ];
